@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  /* Default background for screens with a 16:9 aspect ratio */
+body {
+    background-image: url('pexels-asad-photo-16-9.jpg');
+    background-size: cover;
+  }
+
+  /* Media query for screens with a 9:16 aspect ratio */
+  @media screen and (min-aspect-ratio: 9/16) and (max-aspect-ratio: 9/16) {
+    body {
+      background-image: url('pexels-asad-photo-9-16.jpg');
+      background-size: cover;
+    }
+  }
+  
+  
+  /* Media query for screens with a 4:3 aspect ratio */
+  @media screen and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 5/3) {
+    body {
+      background-image: url('pexels-asad-photo-4-3.jpg');
+      background-size: cover;
+    }
+  }
+  
+  /* Media query for screens with a 1:1 aspect ratio (square screens) */
+  @media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 1/1) {
+    body {
+      background-image: url('pexels-asad-photo-1-1.jpg');
+      background-size: cover;
+    }
+  }
+  
+body, html{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

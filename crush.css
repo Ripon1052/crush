@@ -1,0 +1,89 @@
+.btn-group {
+    padding: 100px;
+    width: 75%;
+    height: 25px;
+    display: flex;
+    justify-content:center;
+    margin-top: 15px;
+    }
+    button {
+    background-color: rgb(149, 0, 255);
+    position: absolute;
+    width: 100px;
+    height: inherit;
+    font-size: 1.2em;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 30px;
+    border: 2px solid #ffffff;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 3px 3px 4px rgb(0, 0, 3);
+    }
+.question{
+    color: chartreuse;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0);
+}
+/* Default background for screens with a 16:9 aspect ratio */
+body {
+    background-image: url('pexels-asad-photo-maldives-16-9.jpg');
+    background-size: cover;
+  }
+
+  /* Media query for screens with a 9:16 aspect ratio */
+  @media screen and (min-aspect-ratio: 9/16) and (max-aspect-ratio: 9/16) {
+    body {
+      background-image: url('pexels-asad-photo-maldives-9-16.jpg');
+      background-size: cover;
+    }
+  }
+  
+  
+  /* Media query for screens with a 4:3 aspect ratio */
+  @media screen and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 5/3) {
+    body {
+      background-image: url('pexels-asad-photo-maldives-4-3.jpg');
+      background-size: cover;
+    }
+  }
+  
+  /* Media query for screens with a 1:1 aspect ratio (square screens) */
+  @media screen and (min-aspect-ratio: 1/1) and (max-aspect-ratio: 1/1) {
+    body {
+      background-image: url('pexels-asad-photo-maldives-1-1.jpg');
+      background-size: cover;
+    }
+  }
+  
+body, html{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    background-image:url('IMG_20240304_235201.jpg');
+    background-size: cover; /* Adjust the background image size */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    background-position: center; /* Center the background image */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 400px; /* Adjust the maximum width of the box */
+    width: 80%; /* Adjust the width of the box */
+    height: 400px; /* Adjust the height of the box */
+    margin: 50px; /* Center the box horizontally */
+    display: flex; /* Use flexbox for centering vertically */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+  }
+.message {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+body{
+    background-repeat: no-repeat;
+}
